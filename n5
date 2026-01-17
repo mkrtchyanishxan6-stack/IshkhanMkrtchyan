@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void function(int *arr, int size){
+      int *MAXptr = arr;  
+
+    for (int *ptr = arr + 1; ptr < arr + size; ptr++) {
+      if (*ptr > *MAXptr) {
+        MAXptr = ptr;    
+    }
+}
+    printf("Max number address is %p\n", MAXptr);
+    printf("Max number value is %d\n", *MAXptr);
+}
+
+int main(){
+    int numbers[] = {1, 2, 3, 4, 5, 6};
+    int n = 6;
+      function(numbers, n);  
+}
