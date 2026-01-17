@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void info(){
+    int a = 25;
+    int *ptr = &a;
+      printf("a value = %d\n a adress = %p\n
+      address in pointer = %p\n value pointer = %d", 
+      a, &a, ptr, *ptr);
+}
+int main(){
+    info();
+}
